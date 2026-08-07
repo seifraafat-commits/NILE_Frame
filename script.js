@@ -251,7 +251,7 @@
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
         const submitBtn = form.querySelector("button[type='submit']");
-        const originalText = submitBtn ? submitBtn.textContent : "START YOUR PROJECT WITH NILE FRAME";
+        const originalText = submitBtn ? submitBtn.textContent : "START YOUR PROJECT WITH VYRA GROW";
         
         if (submitBtn) {
           submitBtn.textContent = "SENDING INQUIRY...";
@@ -269,13 +269,13 @@
           });
 
           if (response.ok) {
-            alert("Thank you! Your message has been sent directly to viraframe2026@gmail.com. NILE FRAME will contact you shortly.");
+            alert("Thank you! Your message has been sent directly to viraframe2026@gmail.com. VYRA GROW will contact you shortly.");
             form.reset();
           } else {
             form.submit();
           }
         } catch (err) {
-          alert("Thank you! Your message has been sent to NILE FRAME (viraframe2026@gmail.com).");
+          alert("Thank you! Your message has been sent to VYRA GROW (viraframe2026@gmail.com).");
           form.reset();
         } finally {
           if (submitBtn) {
