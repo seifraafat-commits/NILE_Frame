@@ -244,7 +244,7 @@
     }
   }
 
-  // Contact Form Submission Directly to viraframe2026@gmail.com
+  // Contact Form Submission Directly to vyra.grow@gmail.com
   function setupForm() {
     const form = document.getElementById("contactForm");
     if (form) {
@@ -260,7 +260,7 @@
 
         try {
           const formData = new FormData(form);
-          const response = await fetch("https://formsubmit.co/ajax/viraframe2026@gmail.com", {
+          const response = await fetch("https://formsubmit.co/ajax/vyra.grow@gmail.com", {
             method: "POST",
             body: formData,
             headers: {
@@ -269,13 +269,13 @@
           });
 
           if (response.ok) {
-            alert("Thank you! Your message has been sent directly to viraframe2026@gmail.com. VYRA GROW will contact you shortly.");
+            alert("Thank you! Your message has been sent directly to vyra.grow@gmail.com. VYRA GROW will contact you shortly.");
             form.reset();
           } else {
             form.submit();
           }
         } catch (err) {
-          alert("Thank you! Your message has been sent to VYRA GROW (viraframe2026@gmail.com).");
+          alert("Thank you! Your message has been sent to VYRA GROW (vyra.grow@gmail.com).");
           form.reset();
         } finally {
           if (submitBtn) {
